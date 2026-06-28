@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 160" role="img" aria-labelledby="title desc">
+  <title id="title">Robot mark</title>
+  <desc id="desc">A simple wire drawing of a robot with a smile.</desc>
+  <rect width="260" height="160" fill="none"/>
+  <circle cx="130" cy="28" r="15" fill="#111111"/>
+  <path
+    d="M130 43 L130 72"
+    fill="none"
+    stroke="#111111"
+    stroke-width="8"
+    stroke-linecap="round"
+  />
+  <rect
+    x="64"
+    y="50"
+    width="132"
+    height="104"
+    rx="10"
+    ry="10"
+    fill="none"
+    stroke="#111111"
+    stroke-width="8"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M64 88 L42 98 L42 120 L64 130"
+    fill="none"
+    stroke="#111111"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M196 88 L218 98 L218 120 L196 130"
+    fill="none"
+    stroke="#111111"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="96" cy="96" r="12" fill="#111111"/>
+  <circle cx="164" cy="96" r="12" fill="#111111"/>
+  <path
+    d="M106 123 Q130 135 154 123"
+    fill="none"
+    stroke="#111111"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

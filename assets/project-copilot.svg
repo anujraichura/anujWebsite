@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI Product Copilot preview</title>
+  <desc id="desc">A clean product planning workspace with structured notes and connected idea cards.</desc>
+  <rect width="960" height="720" fill="#fffdf8"/>
+  <rect x="80" y="78" width="800" height="564" rx="6" fill="#d9ebe6" stroke="#151515" stroke-width="3"/>
+  <rect x="126" y="124" width="276" height="472" rx="4" fill="#f7f5ef" stroke="#151515" stroke-width="3"/>
+  <rect x="444" y="124" width="390" height="126" rx="4" fill="#f0b84a" stroke="#151515" stroke-width="3"/>
+  <rect x="444" y="296" width="390" height="126" rx="4" fill="#ffffff" stroke="#151515" stroke-width="3"/>
+  <rect x="444" y="468" width="390" height="126" rx="4" fill="#d76666" stroke="#151515" stroke-width="3"/>
+  <path d="M402 186h42M402 360h42M402 532h42" stroke="#151515" stroke-width="6" stroke-linecap="round"/>
+  <path d="M168 174h190M168 228h142M168 282h174M168 388h120M168 442h182M168 496h150" stroke="#151515" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="762" cy="188" r="28" fill="#0b6f63" stroke="#151515" stroke-width="3"/>
+</svg>

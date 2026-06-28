@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vision and Control for Grasping, Anuj Raichura</title>
+    <link rel="icon" href="../mountain.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Anuj Raichura home">
+        <img class="brand-mark" src="../mountain.svg" alt="" aria-hidden="true">
+        <span>Anuj Raichura</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="../writing.html">Writing</a>
+        <a href="../index.html#work">Work</a>
+      </nav>
+    </header>
+
+    <main class="project-main">
+      <article class="project-hero">
+        <a class="project-kicker" href="../index.html#work">All projects</a>
+        <h1>Vision and Control for Grasping</h1>
+        <p class="project-deck">
+          A robotic manipulation project for grasp planning on deformable transparent
+          objects using RGB-D perception and a 7-DOF Sawyer robot.
+        </p>
+        <img class="project-image" src="../assets/grasp target.PNG" alt="Vision and control for grasping preview">
+
+        <div class="project-content">
+          <aside class="project-meta" aria-label="Project metadata">
+            <div>
+              <span>Context</span>
+              <strong>UC Berkeley Robotics</strong>
+            </div>
+            <div>
+              <span>Role</span>
+              <strong>Mechanical Lead</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>Computer vision, controls, PyTorch</strong>
+            </div>
+          </aside>
+
+          <div class="project-body">
+            <h2>Overview</h2>
+            <p>
+              Transparent and deformable objects are difficult for robots to perceive
+              and manipulate reliably. This project explored grasp planning for clear
+              plastic bags using Intel RealSense RGB-D data.
+            </p>
+            <h2>Highlights</h2>
+            <ul>
+              <li>Developed computer-vision methods for grasp planning on transparent deformable objects.</li>
+              <li>Iterated through grasper designs and optimized end-effector geometry and materials.</li>
+              <li>Implemented a deep-learning grasp pipeline in PyTorch using parallel CNNs for RGB and depth fusion.</li>
+              <li>Improved grasp robustness with K-means denoising and a workspace PD controller for closed-loop arm motion.</li>
+            </ul>
+            <p>
+              <a href="https://drive.google.com/file/d/12f83d1ZSdhdWM5Ciuftx0rAd3Qd4SFIl/view" style="text-decoration: underline;">
+                Paper here
+              </a>
+            </p>
+            <h2>Systems View</h2>
+            <p>
+              The project brought together mechanical design, perception, learned
+              grasp selection, and feedback control around a manipulation problem
+              that breaks many standard assumptions.
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

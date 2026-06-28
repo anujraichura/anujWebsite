@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anuj Raichura</title>
+    <meta
+      name="description"
+      content="Personal portfolio for Anuj Raichura, featuring selected projects, writing, and contact links."
+    >
+    <link rel="icon" href="mountain.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Anuj Raichura home">
+        <img class="brand-mark" src="mountain.svg" alt="" aria-hidden="true">
+        <span>Anuj Raichura</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="writing.html">Writing</a>
+        <a href="#work">Work</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <aside class="profile-column" aria-label="Profile and contact links">
+          <img class="portrait" src="portrait.jpg" alt="Anuj Raichura">
+
+          <div class="contact-list">
+            <a href="mailto:anj27@berkeley.edu">
+              <span>Email</span>
+              <strong>anj27@berkeley.edu</strong>
+            </a>
+            <a href="https://twitter.com/anujraichura">
+              <span>Twitter</span>
+              <strong>@anujraichura</strong>
+            </a>
+            <a href="https://linkedin.com/in/anuj-raichura">
+              <span>LinkedIn</span>
+              <strong>anuj-raichura</strong>
+            </a>
+          </div>
+        </aside>
+
+        <div class="bio-copy">
+          <h1 id="intro-title">I build robots that make the world a better place.</h1>
+          <p>
+            I'm Anuj. I make hardware, software, and everything in between. 
+          </p>
+          <p>
+            I'm currently at <b>Neptune Medical</b>, building mechanical systems for 
+            a first-in-class flexible robotic platform that goes further into anatomy
+            than any robot ever has.
+          </p>
+          <p>
+            Before that, I worked at <b>Medtronic</b>, building motorized surgical stapling instruments and 
+            stents for aneurysms. Prior to that, I was at <b>ProteinSimple</b>, designing electromechanical
+            hardware for protein analysis. 
+          </p>
+          <p>
+            I studied Bioengineering at UC Berkeley with a
+            minor in Electrical Engineering and Computer Science, concentrating in robotics.
+          </p>
+          <p>
+            I live in San Francisco and spend my time learning, building, and exploring new ideas. 
+            I care about applications of AI to the physical world, venture capital, and making things that solve real problems.
+          </p>
+          <p>
+            I write about AI, venture capital, and anything else that interests me at
+            <a class="inline-link" href="https://cyclicality.substack.com/">Cyclicality</a>.
+          </p>
+          <p>
+            I'm always looking for opportunities to meet people, have good conversations, and learn new things. Reach out if you'd like to chat!
+          </p>
+        </div>
+      </section>
+
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <h2 id="work-title">Selected work</h2>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card" href="projects/robotic-articulation-platform.html">
+            <img src="assets/TritonRobot.PNG" alt="Robot">
+            <h3>Robotic Colonoscopy Platform</h3>
+            <p>Mechanical design, tendon-driven actuation, soft robotics, and system integration</p>
+          </a>
+
+          <a class="project-card" href="projects/electromechanical-instrument-algorithms.html">
+            <img src="assets/iliacbranchdevice.jpg" alt="Market Intelligence Dashboard preview">
+            <h3>Stents and Staplers</h3>
+            <p>Stent design optimization, Motor-current sensing, signal processing, and testing</p>
+          </a>
+
+          <a class="project-card" href="projects/transparent-bag-grasping.html">
+            <img src="assets/classical.PNG" alt="Creative Systems Lab preview">
+            <h3>Vision and Control for Grasping</h3>
+            <p>Perception and closed-loop control for transparent deformable objects</p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

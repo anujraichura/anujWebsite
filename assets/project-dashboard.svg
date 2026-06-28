@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Market Intelligence Dashboard preview</title>
+  <desc id="desc">A dashboard with charts, filters, and comparison rows.</desc>
+  <rect width="960" height="720" fill="#fffdf8"/>
+  <rect x="78" y="82" width="804" height="556" rx="6" fill="#f7f5ef" stroke="#151515" stroke-width="3"/>
+  <rect x="118" y="128" width="198" height="464" rx="4" fill="#0b6f63" stroke="#151515" stroke-width="3"/>
+  <rect x="356" y="128" width="486" height="168" rx="4" fill="#ffffff" stroke="#151515" stroke-width="3"/>
+  <rect x="356" y="340" width="218" height="252" rx="4" fill="#f0b84a" stroke="#151515" stroke-width="3"/>
+  <rect x="624" y="340" width="218" height="252" rx="4" fill="#d9ebe6" stroke="#151515" stroke-width="3"/>
+  <path d="M396 244l70-56 74 38 74-72 88 62 70-98" fill="none" stroke="#d76666" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M158 172h116M158 230h88M158 288h126M158 464h90M158 522h114" stroke="#fffdf8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M398 534h130M666 534h130" stroke="#151515" stroke-width="12" stroke-linecap="round"/>
+</svg>
