@@ -43,36 +43,42 @@
           <a href="https://cyclicality.substack.com/">All writing</a>
         </div>
 
-        <div class="writing-grid">
-          <a class="writing-card" href="https://cyclicality.substack.com/p/cycle004-new-frontiers" target="_blank" rel="noreferrer">
-            <time datetime="2026-06-27T20:42:11Z">Jun 27, 2026</time>
-            <h3>cycle004 | New Frontiers</h3>
-            <p>Cursor, Careers, and (AI) CT scans</p>
-            <span>Read on Substack</span>
-          </a>
-
-          <a class="writing-card" href="https://cyclicality.substack.com/p/cycle0023-open-doors" target="_blank" rel="noreferrer">
-            <time datetime="2026-06-13T20:16:00Z">Jun 13, 2026</time>
-            <h3>cycle003 | open doors</h3>
-            <p>Regulation, robots, and research</p>
-            <span>Read on Substack</span>
-          </a>
-
-          <a class="writing-card" href="https://cyclicality.substack.com/p/cycle002-wander" target="_blank" rel="noreferrer">
-            <time datetime="2026-06-06T16:08:32Z">Jun 6, 2026</time>
-            <h3>cycle002 | wander</h3>
-            <p>World models, biotech raises, and AI philosophy</p>
-            <span>Read on Substack</span>
-          </a>
-
-          <a class="writing-card" href="https://cyclicality.substack.com/p/cycle001-intellectually-curious" target="_blank" rel="noreferrer">
-            <time datetime="2026-05-30T21:01:18Z">May 30, 2026</time>
-            <h3>cycle001 | Intellectually Curious</h3>
-            <p>A break from the cycle</p>
-            <span>Read on Substack</span>
-          </a>
+        <div class="writing-grid" id="writing-grid">
+          <p class="feed-loading">Loading posts…</p>
         </div>
       </section>
     </main>
+
+    <script>
+      const FEED_URL = 'https://cyclicality.substack.com/feed';
+      const API = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(FEED_URL)}`;
+
+      function formatDate(dateStr) {
+        const d = new Date(dateStr);
+        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      }
+
+      async function loadPosts() {
+        const grid = document.getElementById('writing-grid');
+        try {
+          const res = await fetch(API);
+          const data = await res.json();
+          if (data.status !== 'ok') throw new Error('Feed error');
+
+          grid.innerHTML = data.items.map(item => `
+            <a class="writing-card" href="${item.link}" target="_blank" rel="noreferrer">
+              <time datetime="${item.pubDate}">${formatDate(item.pubDate)}</time>
+              <h3>${item.title}</h3>
+              <p>${item.description.replace(/<[^>]*>/g, '').slice(0, 100).trim()}…</p>
+              <span>Read on Substack</span>
+            </a>
+          `).join('');
+        } catch {
+          grid.innerHTML = '<p class="feed-error">Could not load posts. <a href="https://cyclicality.substack.com/" target="_blank" rel="noreferrer">Visit Substack directly.</a></p>';
+        }
+      }
+
+      loadPosts();
+    </script>
   </body>
 </html>
