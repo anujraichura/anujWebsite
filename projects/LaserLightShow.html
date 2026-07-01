@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laser Light Show, Anuj Raichura</title>
+    <link rel="icon" href="../mountain.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Anuj Raichura home">
+        <img class="brand-mark" src="../mountain.svg" alt="" aria-hidden="true">
+        <span>Anuj Raichura</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="../writing.html">Writing</a>
+        <a href="../index.html#work">Work</a>
+      </nav>
+    </header>
+
+    <main class="project-main">
+      <article class="project-hero">
+        <a class="project-kicker" href="../index.html#work">All projects</a>
+        <h1>Sound-Reactive Laser Light Show</h1>
+        <p class="project-deck">
+          A portable laser display device that projects 2D shapes onto a wall and cycles through
+          patterns in real time based on the beat of the music.
+        </p>
+
+        <div class="project-video" style="margin: 2rem 0; aspect-ratio: 16/9; width: 100%;">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/Do1rgijeu2I"
+            title="Sound-Reactive Laser Light Show demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="border-radius: 8px;"
+          ></iframe>
+        </div>
+
+        <div class="project-content">
+          <aside class="project-meta" aria-label="Project metadata">
+            <div>
+              <span>Context</span>
+              <strong>UC Berkeley ME102b</strong>
+            </div>
+            <div>
+              <span>Role</span>
+              <strong>Mechanical & Electrical Design</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>Embedded systems, controls, CAD</strong>
+            </div>
+          </aside>
+
+          <div class="project-body">
+            <h2>Overview</h2>
+            <p>
+              A sound-reactive laser light show built for the UC Berkeley ME102b Mechatronics Design course.
+              A single laser is deflected across two single-axis mirrors — one controlling the x-axis,
+              one the y-axis — each driven by a high-speed DC motor. The mirrors oscillate fast enough
+              that the traced path appears as a solid 2D shape to the human eye.
+            </p>
+            <p>
+              Patterns are defined as parametric equations (circle, figure-8, horizontal and vertical
+              lines) and cycle randomly whenever a microphone detects a sound event above a set
+              threshold — making the display react to the beat of music in real time.
+            </p>
+
+            <h2>Highlights</h2>
+            <ul>
+              <li>Designed and CAD'd the full mechanical assembly, including 3D-printed motor mounts, belt-driven diffraction grating selector, and a custom enclosure.</li>
+              <li>Implemented closed-loop PID control for both mirror axes using PWM output from an ESP32 microcontroller.</li>
+              <li>Built a sound-reactive state machine: a microphone ISR triggers random pattern transitions when audio exceeds a tunable threshold.</li>
+              <li>Integrated a stepper-motor-driven diffraction grating carousel to produce rainbow diffraction effects, multiplying apparent laser outputs.</li>
+            </ul>
+
+            <h2>Hardware Images</h2>
+            <img src="../assets/laser-hardware.png" alt="Laser light show hardware assembly" style="width:100%; border-radius:8px; margin-bottom:1.5rem;">
+
+            <h2>CAD</h2>
+            <img src="../assets/laser-cad.png" alt="Laser light show CAD renders" style="width:100%; border-radius:8px; margin-bottom:1.5rem;">
+
+            <h2>Systems View</h2>
+            <p>
+              The project unified mechanical design, embedded firmware, analog sensing, and
+              closed-loop motor control into a single self-contained box. The ESP32 handles
+              two independent PID loops for the mirror axes, a stepper driver for the grating
+              selector, microphone sampling via interrupt, and a state machine — all running
+              concurrently with hardware timers.
+            </p>
+            <p>
+              <a href="https://edg.berkeley.edu/wp-content/uploads/2022/12/2022Fall-team27.pdf" target="_blank" rel="noreferrer" style="text-decoration: underline;">
+                Full report here
+              </a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
